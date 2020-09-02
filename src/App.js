@@ -13,9 +13,9 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
 
         <p>
-          {t('title', { name: 'Adriancito' })}
+          {t('app.title', { name: 'Adriancito' })}
         </p>
-        <p dangerouslySetInnerHTML={{ __html: t('title', { name: "Adriancito" }) }} />
+        <p dangerouslySetInnerHTML={{ __html: t('app.title', { name: "Adriancito" }) }} />
       </header>
     </div>
   );
