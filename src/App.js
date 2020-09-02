@@ -15,6 +15,7 @@ function App() {
         <p>
           {t('title', { name: 'Adriancito' })}
         </p>
+        <p dangerouslySetInnerHTML={{ __html: t('title', { name: "Adriancito" }) }} />
       </header>
     </div>
   );
