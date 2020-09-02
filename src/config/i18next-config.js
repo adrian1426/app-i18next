@@ -7,12 +7,12 @@ i18n.use(initReactI18next).init({
   resources: {
     es: {
       translation: {
-        title: "Bienvenido a react"
+        title: "Bienvenido a react {{name}}"
       }
     },
     en: {
       translation: {
-        title: "Welcome to react"
+        title: "Welcome to react {{name}}"
       }
     }
   }
