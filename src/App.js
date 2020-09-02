@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 function App() {
 
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation(['welcome']);
 
   const handleChangeIdioma = idioma => {
     i18n.changeLanguage(idioma);
@@ -20,11 +20,11 @@ function App() {
         <p>
           {t('app.title', { name: 'Adriancito' })}
         </p>
-        <p dangerouslySetInnerHTML={{ __html: t('app.title', { name: "Adriancito" }) }} />
 
         <br />
         <button onClick={() => handleChangeIdioma('en')}>English</button>
-        <button onClick={() => handleChangeIdioma('es')}>Español</button>
+        <button onClick={() => handleChangeIdioma('es-mx')}>Español México</button>
+        <button onClick={() => handleChangeIdioma('es-co')}>Español Colombia</button>
       </header>
     </div>
   );
